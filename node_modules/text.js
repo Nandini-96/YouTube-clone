@@ -1,7 +1,3 @@
-"use strict";
-
-exports.__esModule = true;
-exports.default = text;
 var regExpNbspEntity = /&nbsp;/gi;
 var regExpNbspHex = /\xA0/g;
 var regExpSpaces = /\s+([^\s])/gm;
@@ -13,7 +9,7 @@ var regExpSpaces = /\s+([^\s])/gm;
  * @param singleSpaces whether to convert multiple whitespace chars into a single space character
  */
 
-function text(node, trim, singleSpaces) {
+export default function text(node, trim, singleSpaces) {
   if (trim === void 0) {
     trim = true;
   }
@@ -38,5 +34,3 @@ function text(node, trim, singleSpaces) {
 
   return elementText;
 }
-
-module.exports = exports["default"];

@@ -1,7 +1,3 @@
-"use strict";
-
-exports.__esModule = true;
-exports.default = qsa;
 var toArray = Function.prototype.bind.call(Function.prototype.call, [].slice);
 /**
  * Runs `querySelectorAll` on a given element.
@@ -10,8 +6,6 @@ var toArray = Function.prototype.bind.call(Function.prototype.call, [].slice);
  * @param selector the selector
  */
 
-function qsa(element, selector) {
+export default function qsa(element, selector) {
   return toArray(element.querySelectorAll(selector));
 }
-
-module.exports = exports["default"];

@@ -1,8 +1,3 @@
-"use strict";
-
-exports.__esModule = true;
-exports.default = void 0;
-
 /**
  * A `removeEventListener` ponyfill
  * 
@@ -20,6 +15,4 @@ function removeEventListener(node, eventName, handler, options) {
   }
 }
 
-var _default = removeEventListener;
-exports.default = _default;
-module.exports = exports["default"];
+export default removeEventListener;

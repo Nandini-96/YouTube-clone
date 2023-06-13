@@ -1,8 +1,3 @@
-"use strict";
-
-exports.__esModule = true;
-exports.default = triggerEvent;
-
 /**
  * Triggers an event on a given element.
  * 
@@ -11,7 +6,7 @@ exports.default = triggerEvent;
  * @param bubbles whether the event should bubble up
  * @param cancelable whether the event should be cancelable
  */
-function triggerEvent(node, eventName, bubbles, cancelable) {
+export default function triggerEvent(node, eventName, bubbles, cancelable) {
   if (bubbles === void 0) {
     bubbles = false;
   }
@@ -26,5 +21,3 @@ function triggerEvent(node, eventName, bubbles, cancelable) {
     node.dispatchEvent(event);
   }
 }
-
-module.exports = exports["default"];
